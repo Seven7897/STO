@@ -1,0 +1,402 @@
+body,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: "centurygothic", sans-serif;
+  src: local("centurygothic"), url(/fonts/centurygothic.ttf) format(truetype);
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+header .container .label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .label img {
+  width: 32px;
+  height: 51px;
+}
+header .container .label .name {
+  font-family: Bradobrei;
+  width: 139px;
+  font-size: 12px;
+  color: #dd7907;
+}
+header .container .label .list {
+  margin-top: 10px;
+  font-size: 8px;
+}
+header .container .adres {
+  font-family: Century Gothic;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+header .container .message button {
+  font-size: 10px;
+  font-weight: 600;
+  height: 26px;
+  width: 99px;
+  background-color: #dd7907;
+  border: 0;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.head {
+  padding: 0 10px 0 10px;
+}
+.head .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #dd7907;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.head .container a {
+  text-decoration: none;
+  color: #dd7907;
+  font-style: Regular;
+  font-size: 9px;
+}
+.head .container .services {
+  color: #dd7907;
+  font-style: Regular;
+  font-size: 9px;
+}
+
+.brand .container {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  margin-bottom: 10px;
+}
+.brand .container .left p {
+  padding-left: 20px;
+  font-size: 10px;
+  line-height: 100%;
+}
+.brand .container .left h1 {
+  margin: 0;
+  font-family: Century Gothic;
+  font-weight: 400;
+  font-size: 27px;
+}
+.brand .container .left .item {
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.brand .container .left .item1 {
+  margin-top: 20px;
+}
+.brand .container .rigth {
+  position: relative;
+}
+.brand .container .rigth .rigth_1 {
+  width: 38px;
+  height: 44px;
+  position: absolute;
+  left: 43%;
+}
+.brand .container .rigth .rigth_2 {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  top: -20px;
+}
+
+.offers {
+  background-color: #dd7907;
+  padding: 11px;
+  position: relative;
+  z-index: 5;
+}
+.offers .container {
+  outline: 1px solid #f1f1f1;
+}
+.offers .container .weOffers {
+  color: #f1f1f1;
+  margin-top: 6px;
+  font-weight: 600;
+  width: 239px;
+  height: 26px;
+  margin: 0 auto;
+  text-align: center;
+}
+.offers .container .flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.offers .container .flexContainer .cards {
+  width: 99px;
+  height: 90px;
+}
+.offers .container .flexContainer .cards img {
+  width: 29px;
+  display: block;
+  margin: 0 auto;
+}
+.offers .container .flexContainer .cards h4 {
+  text-align: center;
+  color: #f1f1f1;
+  font-weight: normal;
+  font-size: 10px;
+}
+.offers .Group4 {
+  height: 125px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  z-index: -1;
+}
+.offers .Group5 {
+  height: 57px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.slader {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.slader .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  width: 309px;
+  margin: 0 auto;
+}
+.slader .container .contBig {
+  display: flex;
+}
+.slader .container .contBig .carusel_slide {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  margin-right: 5px;
+}
+.slader .container .contBig .carusel_slide .contCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.slader .container .contBig .carusel_slide .contCards .cards {
+  box-sizing: border-box;
+  padding: 4px;
+  height: 55px;
+  width: 98px;
+  box-shadow: 0px 2px 6px 0px;
+}
+.slader .container .contBig .carusel_slide .contCards .cards img {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+}
+.slader .container .contBig .carusel_slide .contCards .cards p {
+  margin-top: 2px;
+  text-align: center;
+  font-size: 10px;
+}
+.slader .btn {
+  opacity: 0.7;
+  color: #dd7907;
+  background-color: #dd7907;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+.slader .btn-rigth {
+  position: absolute;
+  top: 43%;
+  right: 25%;
+}
+.slader .btn-left {
+  position: absolute;
+  top: 43%;
+  left: 25%;
+}
+.slader .transfornAnimation {
+  transition: 0.4s all ease-in-out;
+}
+
+.take {
+  padding: 25px 40px;
+}
+.take .container {
+  border: 1px solid #dd7907;
+  border-radius: 15px;
+}
+.take .container .main {
+  font-size: 12px;
+  height: 31px;
+  width: 191px;
+  margin: 5px auto 0 auto;
+  text-align: center;
+}
+.take .container form {
+  font-size: 10px;
+  line-height: 20px;
+  width: 250px;
+  margin: 0 auto 20px auto;
+}
+.take .container form label {
+  width: 100px;
+}
+.take .container form input {
+  border-bottom: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.take .container form button {
+  display: flex;
+  margin: 10px auto;
+  background-color: #dd7907;
+  border-radius: 15px;
+  border: 0;
+  width: 83px;
+  height: 17px;
+}
+
+.darts .container {
+  padding: 11px 11px 0 11px;
+}
+.darts .container .stocks {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #dd7907;
+  margin-bottom: 10px;
+}
+.darts .container .discount {
+  position: relative;
+}
+.darts .container .discount img {
+  box-sizing: border-box;
+  box-shadow: 0px 3px 6px 0px;
+  border: #dd7907 3px solid;
+  width: 100%;
+  height: 131px;
+}
+.darts .container .discount .discountDarts {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.darts .container .discount .discountDarts h3 {
+  margin: 0 0 10px 0;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.darts .container .discount .discountDarts h4 {
+  margin: 0;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+footer {
+  position: relative;
+  box-sizing: border-box;
+  height: 166px;
+  background-color: #dd7907;
+}
+footer .abs {
+  z-index: 0;
+  position: absolute;
+  width: 150px;
+  right: 0;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .container .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container .left h3 {
+  text-align: center;
+  width: inherit;
+  height: 30px;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+footer .container .left .messager {
+  height: 31px;
+  display: flex;
+  align-items: center;
+}
+footer .container .left .messager img {
+  width: 21px;
+  height: 21px;
+}
+footer .container .left .messager .phone {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+}
+footer .container .left button {
+  margin-top: 5px;
+  width: 114px;
+  height: 28px;
+  font-size: 10px;
+  border: 0;
+  border-radius: 5px;
+  color: #dd7907;
+}
+footer .container .left .adres {
+  margin-top: 20px;
+  color: #f1f1f1;
+  font-weight: 400;
+  font-size: 10px;
+}
+footer .container .center {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+footer .container .center h2 {
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f1f1f1;
+  border-bottom: 1px solid #ffffff;
+}
+footer .container .center a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+footer .container .rigth img {
+  z-index: 1;
+  width: 75px;
+  border-radius: 10px;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */
