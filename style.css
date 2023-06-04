@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #f1f1f1;
+  background-color: #e9e8e8;
 }
 
 @font-face {
@@ -19,6 +19,11 @@ html {
 @media (min-width: 1024px) {
   .container {
     width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1600px;
   }
 }
 header .container {
@@ -311,7 +316,6 @@ header .container .message button a {
 @media (min-width: 1024px) {
   .offers .container {
     padding-top: 40px;
-    width: inherit;
     height: inherit;
   }
 }
@@ -418,6 +422,19 @@ header .container .message button a {
     height: 722px;
   }
 }
+.slader .uslugi {
+  color: #dd7907;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .slader .uslugi {
+    margin-bottom: 60px;
+    font-size: 38px;
+  }
+}
 .slader .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -427,7 +444,7 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .slader .container {
-    width: 905px;
+    width: 933px;
   }
 }
 .slader .container .contBig {
@@ -439,12 +456,23 @@ header .container .message button a {
   gap: 5px;
   margin-right: 5px;
 }
+@media (min-width: 1024px) {
+  .slader .container .contBig .carusel_slide {
+    gap: 30px;
+  }
+}
 .slader .container .contBig .carusel_slide .contCards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
+@media (min-width: 1024px) {
+  .slader .container .contBig .carusel_slide .contCards {
+    gap: 20px;
+  }
+}
 .slader .container .contBig .carusel_slide .contCards .cards {
+  background-color: #ffffff;
   box-sizing: border-box;
   padding: 4px;
   height: 55px;
@@ -454,7 +482,7 @@ header .container .message button a {
 @media (min-width: 1024px) {
   .slader .container .contBig .carusel_slide .contCards .cards {
     height: 216px;
-    width: 300px;
+    width: 298px;
   }
 }
 .slader .container .contBig .carusel_slide .contCards .cards img {
@@ -493,22 +521,22 @@ header .container .message button a {
 }
 .slader .btn-rigth {
   position: absolute;
-  top: 43%;
+  top: 55%;
   right: 25%;
 }
 @media (min-width: 1024px) {
   .slader .btn-rigth {
-    top: 26%;
+    top: 42%;
   }
 }
 .slader .btn-left {
   position: absolute;
-  top: 43%;
+  top: 55%;
   left: 25%;
 }
 @media (min-width: 1024px) {
   .slader .btn-left {
-    top: 26%;
+    top: 42%;
   }
 }
 .slader .transfornAnimation {
@@ -573,6 +601,9 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .take .container form .inp_1 {
+    background-color: #e9e8e8;
+    font-size: 36px;
+    height: 50px;
     width: 667px;
   }
 }
@@ -581,6 +612,9 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .take .container form .inp_2 {
+    background-color: #e9e8e8;
+    font-size: 36px;
+    height: 50px;
     width: 600px;
   }
 }
@@ -589,6 +623,9 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .take .container form .inp_3 {
+    background-color: #e9e8e8;
+    font-size: 36px;
+    height: 50px;
     width: 578px;
   }
 }
@@ -597,6 +634,9 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .take .container form .inp_4 {
+    background-color: #e9e8e8;
+    font-size: 36px;
+    height: 50px;
     width: 629px;
   }
 }
@@ -620,6 +660,7 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .take .container form button {
+    margin-top: 30px;
     text-align: center;
     width: 335px;
     height: 72px;
