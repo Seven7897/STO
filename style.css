@@ -10,38 +10,56 @@ html {
   font-family: "centurygothic", sans-serif;
   src: local("centurygothic"), url(/fonts/centurygothic.ttf) format(truetype);
 }
+@media (min-width: 800px) {
+  .container {
+    width: 760px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
 header .container {
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  header .container {
+    height: 380px;
+  }
 }
 header .container .label {
   width: 120px;
 }
+@media (min-width: 1024px) {
+  header .container .label {
+    width: 500px;
+  }
+}
 header .container .label img {
-  width: 100%;
+  width: 140%;
 }
-header .container .label .name {
-  font-family: Bradobrei;
-  width: 139px;
-  font-size: 12px;
-  color: #dd7907;
-}
-header .container .label .list {
-  margin-top: 10px;
-  font-size: 8px;
+@media (min-width: 1024px) {
+  header .container .label img {
+    width: 140%;
+  }
 }
 header .container .adres {
   font-family: Century Gothic;
   font-style: Regular;
   font-size: 10px;
   line-height: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
+}
+@media (min-width: 1024px) {
+  header .container .adres {
+    font-size: 36px;
+  }
 }
 header .container .message button {
   font-size: 10px;
@@ -53,6 +71,14 @@ header .container .message button {
   color: #ffffff;
   border-radius: 3px;
 }
+@media (min-width: 1024px) {
+  header .container .message button {
+    font-size: 32px;
+    width: 340px;
+    height: 72px;
+    border-radius: 10px;
+  }
+}
 header .container .message button a {
   text-decoration: none;
   color: #ffffff;
@@ -60,6 +86,11 @@ header .container .message button a {
 
 .head {
   padding: 0 10px 0 10px;
+}
+@media (min-width: 1024px) {
+  .head {
+    height: 60px;
+  }
 }
 .head .container {
   display: flex;
@@ -75,6 +106,14 @@ header .container .message button a {
   font-style: Regular;
   font-size: 9px;
 }
+@media (min-width: 1024px) {
+  .head .container a {
+    font-size: 32px;
+  }
+}
+.head .container a:hover {
+  color: #f1b26a;
+}
 .head .container .services {
   color: #dd7907;
   font-style: Regular;
@@ -84,15 +123,36 @@ header .container .message button a {
 .brand {
   margin-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  .brand {
+    height: 800px;
+  }
+}
 .brand .container {
   display: grid;
   grid-template-columns: 1fr 150px;
   margin-bottom: 10px;
 }
+@media (min-width: 1024px) {
+  .brand .container {
+    grid-template-columns: 60% 40%;
+  }
+}
 .brand .container .left p {
   padding-left: 20px;
   font-size: 10px;
   line-height: 100%;
+}
+@media (min-width: 1024px) {
+  .brand .container .left p {
+    padding-left: 40px;
+    font-size: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .brand .container .left p {
+    font-size: 48px;
+  }
 }
 .brand .container .left h1 {
   margin: 0 0 0 10px;
@@ -100,16 +160,60 @@ header .container .message button a {
   font-weight: 400;
   font-size: 27px;
 }
+@media (min-width: 1024px) {
+  .brand .container .left h1 {
+    padding-left: 30px;
+    font-size: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .brand .container .left h1 {
+    padding-left: 35px;
+    font-size: 100px;
+  }
+}
+@media (min-width: 1600px) {
+  .brand .container .left h1 {
+    padding-left: 30px;
+    font-size: 110px;
+  }
+}
+@media (min-width: 1720px) {
+  .brand .container .left h1 {
+    padding-left: 40px;
+    font-size: 128px;
+  }
+}
 .brand .container .left .item {
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
   padding-left: 20px;
   font-size: 10px;
   line-height: 20px;
 }
+@media (min-width: 1024px) {
+  .brand .container .left .item {
+    padding-left: 40px;
+    width: 60%;
+    line-height: 64px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .brand .container .left .item {
+    width: 80%;
+    font-size: 48px;
+  }
+}
 .brand .container .left .item1 {
   margin-top: 20px;
 }
+@media (min-width: 1024px) {
+  .brand .container .left .item1 {
+    margin-top: 80px;
+  }
+}
 .brand .container .rigth {
+  overflow: hidden;
   position: relative;
 }
 .brand .container .rigth .rigth_1 {
@@ -118,11 +222,74 @@ header .container .message button a {
   position: absolute;
   left: 43%;
 }
+@media (min-width: 1024px) {
+  .brand .container .rigth .rigth_1 {
+    left: 50%;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1280px) {
+  .brand .container .rigth .rigth_1 {
+    left: 50%;
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (min-width: 1440px) {
+  .brand .container .rigth .rigth_1 {
+    width: 160px;
+    height: 160px;
+    left: 50%;
+  }
+}
 .brand .container .rigth .rigth_2 {
   width: 150px;
   height: 200px;
   position: absolute;
   top: -20px;
+}
+@media (min-width: 1024px) {
+  .brand .container .rigth .rigth_2 {
+    width: 500px;
+    height: 570px;
+    top: -5%;
+  }
+}
+@media (min-width: 1280px) {
+  .brand .container .rigth .rigth_2 {
+    width: 500px;
+    height: 570px;
+    top: -5%;
+    left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .brand .container .rigth .rigth_2 {
+    width: 580px;
+    height: 620px;
+    top: 0;
+    left: 5%;
+  }
+}
+@media (min-width: 1600px) {
+  .brand .container .rigth .rigth_2 {
+    left: 10%;
+  }
+}
+@media (min-width: 1800px) {
+  .brand .container .rigth .rigth_2 {
+    width: 500px;
+    height: 570px;
+    left: 20%;
+  }
+}
+@media (min-width: 2200px) {
+  .brand .container .rigth .rigth_2 {
+    width: 600px;
+    height: 650px;
+    left: 25%;
+  }
 }
 
 .offers {
@@ -131,8 +298,22 @@ header .container .message button a {
   position: relative;
   z-index: 5;
 }
+@media (min-width: 1024px) {
+  .offers {
+    height: 566px;
+    padding: 30px 75px;
+  }
+}
 .offers .container {
   outline: 1px solid #f1f1f1;
+  box-sizing: border-box;
+}
+@media (min-width: 1024px) {
+  .offers .container {
+    padding-top: 40px;
+    width: inherit;
+    height: inherit;
+  }
 }
 .offers .container .weOffers {
   color: #f1f1f1;
@@ -143,25 +324,53 @@ header .container .message button a {
   margin: 0 auto;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .offers .container .weOffers {
+    width: 560px;
+    font-size: 38px;
+    height: 51px;
+  }
+}
 .offers .container .flexContainer {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+@media (min-width: 1024px) {
+  .offers .container .flexContainer {
+    margin-top: 60px;
+  }
+}
 .offers .container .flexContainer .cards {
   width: 99px;
   height: 90px;
+}
+@media (min-width: 1024px) {
+  .offers .container .flexContainer .cards {
+    width: 420px;
+  }
 }
 .offers .container .flexContainer .cards img {
   width: 29px;
   display: block;
   margin: 0 auto;
 }
+@media (min-width: 1024px) {
+  .offers .container .flexContainer .cards img {
+    width: 130px;
+    height: 130px;
+  }
+}
 .offers .container .flexContainer .cards h4 {
   text-align: center;
   color: #f1f1f1;
   font-weight: normal;
   font-size: 10px;
+}
+@media (min-width: 1024px) {
+  .offers .container .flexContainer .cards h4 {
+    font-size: 32px;
+  }
 }
 .offers .Group4 {
   height: 125px;
@@ -170,6 +379,20 @@ header .container .message button a {
   left: 0;
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  .offers .Group4 {
+    height: 400px;
+    width: 300px;
+    top: 20%;
+  }
+}
+@media (min-width: 1440px) {
+  .offers .Group4 {
+    height: 500px;
+    width: 400px;
+    top: 10%;
+  }
+}
 .offers .Group5 {
   height: 57px;
   position: absolute;
@@ -177,11 +400,23 @@ header .container .message button a {
   right: 0;
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  .offers .Group5 {
+    width: 120px;
+    height: 120px;
+  }
+}
 
 .slader {
   margin-top: 50px;
   margin-bottom: 20px;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .slader {
+    margin-top: 100px;
+    height: 722px;
+  }
 }
 .slader .container {
   display: grid;
@@ -189,6 +424,11 @@ header .container .message button a {
   overflow: hidden;
   width: 309px;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .slader .container {
+    width: 905px;
+  }
 }
 .slader .container .contBig {
   display: flex;
@@ -211,15 +451,31 @@ header .container .message button a {
   width: 98px;
   box-shadow: 0px 2px 6px 0px;
 }
+@media (min-width: 1024px) {
+  .slader .container .contBig .carusel_slide .contCards .cards {
+    height: 216px;
+    width: 300px;
+  }
+}
 .slader .container .contBig .carusel_slide .contCards .cards img {
   display: block;
   margin: 0 auto;
   width: 25px;
 }
+@media (min-width: 1024px) {
+  .slader .container .contBig .carusel_slide .contCards .cards img {
+    width: 120px;
+  }
+}
 .slader .container .contBig .carusel_slide .contCards .cards p {
   margin-top: 2px;
   text-align: center;
   font-size: 10px;
+}
+@media (min-width: 1024px) {
+  .slader .container .contBig .carusel_slide .contCards .cards p {
+    font-size: 32px;
+  }
 }
 .slader .btn {
   opacity: 0.7;
@@ -229,15 +485,31 @@ header .container .message button a {
   border: 0;
   cursor: pointer;
 }
+@media (min-width: 1024px) {
+  .slader .btn {
+    width: 60px;
+    height: 60px;
+  }
+}
 .slader .btn-rigth {
   position: absolute;
   top: 43%;
   right: 25%;
 }
+@media (min-width: 1024px) {
+  .slader .btn-rigth {
+    top: 26%;
+  }
+}
 .slader .btn-left {
   position: absolute;
   top: 43%;
   left: 25%;
+}
+@media (min-width: 1024px) {
+  .slader .btn-left {
+    top: 26%;
+  }
 }
 .slader .transfornAnimation {
   transition: 0.4s all ease-in-out;
@@ -246,9 +518,20 @@ header .container .message button a {
 .take {
   padding: 25px 40px;
 }
+@media (min-width: 1024px) {
+  .take {
+    height: 657px;
+  }
+}
 .take .container {
   border: 1px solid #dd7907;
   border-radius: 15px;
+}
+@media (min-width: 1024px) {
+  .take .container {
+    width: 950px;
+    height: 520px;
+  }
 }
 .take .container .main {
   font-size: 12px;
@@ -257,14 +540,65 @@ header .container .message button a {
   margin: 5px auto 0 auto;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .take .container .main {
+    font-size: 36px;
+    width: 630px;
+    height: 90px;
+    margin-top: 40px;
+  }
+}
 .take .container form {
   font-size: 10px;
   line-height: 20px;
   width: 250px;
   margin: 0 auto 20px auto;
 }
+@media (min-width: 1024px) {
+  .take .container form {
+    width: 750px;
+    line-height: 50px;
+  }
+}
 .take .container form label {
   width: 100px;
+}
+@media (min-width: 1024px) {
+  .take .container form label {
+    font-size: 36px;
+  }
+}
+.take .container form .inp_1 {
+  width: 217px;
+}
+@media (min-width: 1024px) {
+  .take .container form .inp_1 {
+    width: 667px;
+  }
+}
+.take .container form .inp_2 {
+  width: 199px;
+}
+@media (min-width: 1024px) {
+  .take .container form .inp_2 {
+    width: 600px;
+  }
+}
+.take .container form .inp_3 {
+  width: 192px;
+}
+@media (min-width: 1024px) {
+  .take .container form .inp_3 {
+    width: 578px;
+  }
+}
+.take .container form .inp_4 {
+  width: 206px;
+}
+@media (min-width: 1024px) {
+  .take .container form .inp_4 {
+    width: 629px;
+  }
 }
 .take .container form input {
   border-bottom: 1px solid #000;
@@ -274,6 +608,8 @@ header .container .message button a {
 }
 .take .container form button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 10px auto;
   background-color: #dd7907;
   color: #f1f1f1;
@@ -282,9 +618,23 @@ header .container .message button a {
   width: 83px;
   height: 17px;
 }
+@media (min-width: 1024px) {
+  .take .container form button {
+    text-align: center;
+    width: 335px;
+    height: 72px;
+    font-size: 48px;
+  }
+}
 
 .darts .container {
+  box-sizing: border-box;
   padding: 11px 11px 0 11px;
+}
+@media (min-width: 1024px) {
+  .darts .container {
+    padding: 0 75px 75px 75px;
+  }
 }
 .darts .container .stocks {
   font-size: 12px;
@@ -292,6 +642,12 @@ header .container .message button a {
   text-align: center;
   color: #dd7907;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .darts .container .stocks {
+    margin-bottom: 40px;
+    font-size: 38px;
+  }
 }
 .darts .container .discount {
   position: relative;
@@ -302,6 +658,11 @@ header .container .message button a {
   border: #dd7907 3px solid;
   width: 100%;
   height: 131px;
+}
+@media (min-width: 1024px) {
+  .darts .container .discount img {
+    height: 440px;
+  }
 }
 .darts .container .discount .discountDarts {
   position: absolute;
@@ -314,11 +675,21 @@ header .container .message button a {
   color: #ffffff;
   font-weight: 600;
 }
+@media (min-width: 1024px) {
+  .darts .container .discount .discountDarts h3 {
+    font-size: 36px;
+  }
+}
 .darts .container .discount .discountDarts h4 {
   margin: 0;
   font-size: 10px;
   color: #ffffff;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .darts .container .discount .discountDarts h4 {
+    font-size: 32px;
+  }
 }
 
 footer {
@@ -328,6 +699,11 @@ footer {
   box-sizing: border-box;
   height: 166px;
   background-color: #dd7907;
+}
+@media (min-width: 1024px) {
+  footer {
+    height: 540px;
+  }
 }
 footer .abs {
   z-index: 0;
@@ -340,10 +716,20 @@ footer .container {
   display: flex;
   justify-content: space-around;
 }
+@media (min-width: 1024px) {
+  footer .container {
+    height: inherit;
+  }
+}
 footer .container .left {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  footer .container .left {
+    display: block;
+  }
 }
 footer .container .left h3 {
   text-align: center;
@@ -355,16 +741,33 @@ footer .container .left h3 {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
+@media (min-width: 1024px) {
+  footer .container .left h3 {
+    display: inline-table;
+    font-size: 38px;
+  }
+}
 footer .container .left .messager {
   height: 31px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+@media (min-width: 1024px) {
+  footer .container .left .messager {
+    margin: 30px 0;
+    font-size: 32px;
+  }
+}
 footer .container .left .messager .phone {
   color: #ffffff;
   font-size: 10px;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  footer .container .left .messager .phone {
+    font-size: 32px;
+  }
 }
 footer .container .left button {
   margin-top: 5px;
@@ -374,6 +777,14 @@ footer .container .left button {
   border: 0;
   border-radius: 5px;
   color: #dd7907;
+}
+@media (min-width: 1024px) {
+  footer .container .left button {
+    margin-bottom: 40px;
+    font-size: 32px;
+    height: 68px;
+    width: 330px;
+  }
 }
 footer .container .left button a {
   color: #dd7907;
@@ -386,9 +797,20 @@ footer .container .left .adres {
   font-weight: 400;
   font-size: 10px;
 }
+@media (min-width: 1024px) {
+  footer .container .left .adres {
+    font-size: 32px;
+  }
+}
 footer .container .center {
+  width: 80px;
   margin-left: 10px;
   margin-right: 10px;
+}
+@media (min-width: 1024px) {
+  footer .container .center {
+    width: 400px;
+  }
 }
 footer .container .center h2 {
   line-height: 15px;
@@ -397,10 +819,32 @@ footer .container .center h2 {
   color: #f1f1f1;
   border-bottom: 1px solid #ffffff;
 }
+@media (min-width: 1024px) {
+  footer .container .center h2 {
+    line-height: 50px;
+    font-size: 38px;
+  }
+}
 footer .container .center a {
   font-size: 10px;
   color: #f1f1f1;
   text-decoration: none;
+}
+@media (min-width: 1024px) {
+  footer .container .center a {
+    line-height: 50px;
+    font-size: 32px;
+  }
+}
+footer .container .center a:hover {
+  text-decoration: underline;
+  font-size: 12px;
+  color: rgb(211, 211, 211);
+}
+@media (min-width: 1024px) {
+  footer .container .center a:hover {
+    font-size: 38px;
+  }
 }
 footer .container .rigth {
   display: flex;
@@ -409,6 +853,13 @@ footer .container .rigth {
 footer .container .rigth img {
   z-index: 1;
   width: 75px;
+  height: 140px;
   border-radius: 10px;
   background-color: #fff;
+}
+@media (min-width: 1024px) {
+  footer .container .rigth img {
+    height: 450px;
+    width: 388px;
+  }
 }/*# sourceMappingURL=style.css.map */
