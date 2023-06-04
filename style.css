@@ -113,16 +113,67 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .head .container a {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 .head .container a:hover {
-  color: #f1b26a;
+  font-weight: 600;
 }
 .head .container .services {
-  color: #dd7907;
-  font-style: Regular;
-  font-size: 9px;
+  padding: auto;
+}
+@media (min-width: 1024px) {
+  .head .container .services {
+    padding: auto;
+  }
+}
+.head .container .services1 {
+  width: 35px;
+}
+@media (min-width: 1024px) {
+  .head .container .services1 {
+    width: 120px;
+  }
+}
+.head .container .services2 {
+  width: 60px;
+}
+@media (min-width: 1024px) {
+  .head .container .services2 {
+    width: 215px;
+  }
+}
+.head .container .services3 {
+  width: 35px;
+}
+@media (min-width: 1024px) {
+  .head .container .services3 {
+    width: 100px;
+  }
+}
+.head .container .services4 {
+  width: 80px;
+}
+@media (min-width: 1024px) {
+  .head .container .services4 {
+    width: 250px;
+  }
+}
+.head .container .services5 {
+  width: 70px;
+}
+@media (min-width: 1024px) {
+  .head .container .services5 {
+    width: 160px;
+  }
+}
+.head .container .services6 {
+  width: 45px;
+}
+@media (min-width: 1024px) {
+  .head .container .services6 {
+    width: 140px;
+  }
 }
 
 .brand {
@@ -598,10 +649,10 @@ header .container .message button a {
 }
 .take .container form .inp_1 {
   width: 217px;
+  background-color: #e9e8e8;
 }
 @media (min-width: 1024px) {
   .take .container form .inp_1 {
-    background-color: #e9e8e8;
     font-size: 36px;
     height: 50px;
     width: 667px;
@@ -609,10 +660,10 @@ header .container .message button a {
 }
 .take .container form .inp_2 {
   width: 199px;
+  background-color: #e9e8e8;
 }
 @media (min-width: 1024px) {
   .take .container form .inp_2 {
-    background-color: #e9e8e8;
     font-size: 36px;
     height: 50px;
     width: 600px;
@@ -620,10 +671,10 @@ header .container .message button a {
 }
 .take .container form .inp_3 {
   width: 192px;
+  background-color: #e9e8e8;
 }
 @media (min-width: 1024px) {
   .take .container form .inp_3 {
-    background-color: #e9e8e8;
     font-size: 36px;
     height: 50px;
     width: 578px;
@@ -631,10 +682,10 @@ header .container .message button a {
 }
 .take .container form .inp_4 {
   width: 206px;
+  background-color: #e9e8e8;
 }
 @media (min-width: 1024px) {
   .take .container form .inp_4 {
-    background-color: #e9e8e8;
     font-size: 36px;
     height: 50px;
     width: 629px;
