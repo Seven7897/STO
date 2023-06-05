@@ -76,6 +76,7 @@ header .container .message button {
   border: 0;
   color: #ffffff;
   border-radius: 3px;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   header .container .message button {
@@ -88,6 +89,9 @@ header .container .message button {
 header .container .message button a {
   text-decoration: none;
   color: #ffffff;
+}
+header .container .message button:hover {
+  background-color: #140202;
 }
 
 .head {
@@ -733,6 +737,7 @@ header .container .message button a {
   border: 0;
   width: 83px;
   height: 17px;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .take .container form button {
@@ -742,6 +747,9 @@ header .container .message button a {
     height: 72px;
     font-size: 48px;
   }
+}
+.take .container form button:hover {
+  background-color: #140202;
 }
 
 .darts .container {
@@ -900,6 +908,7 @@ footer .container .left button {
   border: 0;
   border-radius: 5px;
   color: #dd7907;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   footer .container .left button {
@@ -912,6 +921,9 @@ footer .container .left button {
 footer .container .left button a {
   color: #dd7907;
   text-decoration: none;
+}
+footer .container .left button:hover {
+  background-color: #636c77;
 }
 footer .container .left .adres {
   text-align: center;
