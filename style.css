@@ -242,6 +242,8 @@ header .container .message button a {
   }
 }
 .brand .container .left .item {
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: #f1f1f1;
   box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
   padding-left: 20px;
@@ -250,6 +252,9 @@ header .container .message button a {
 }
 @media (min-width: 1024px) {
   .brand .container .left .item {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 40px;
     width: 60%;
     line-height: 64px;
@@ -362,7 +367,7 @@ header .container .message button a {
     padding: 30px 75px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1600px) {
   .offers {
     width: 1440px;
     margin: 0 auto;
@@ -591,6 +596,7 @@ header .container .message button a {
 @media (min-width: 1024px) {
   .slader .btn-rigth {
     top: 42%;
+    right: 10%;
   }
 }
 .slader .btn-left {
@@ -601,6 +607,7 @@ header .container .message button a {
 @media (min-width: 1024px) {
   .slader .btn-left {
     top: 42%;
+    left: 10%;
   }
 }
 .slader .transfornAnimation {
@@ -808,6 +815,12 @@ footer {
 @media (min-width: 1024px) {
   footer {
     height: 540px;
+  }
+}
+@media (min-width: 1980px) {
+  footer {
+    margin: 0 auto;
+    width: 1600px;
   }
 }
 footer .abs {
