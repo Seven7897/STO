@@ -508,12 +508,14 @@ header .container .message button a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
-  width: 309px;
+  width: 300px;
   margin: 0 auto;
+  box-shadow: 0 0 4px 2px;
 }
 @media (min-width: 1024px) {
   .slader .container {
     width: 933px;
+    box-shadow: 0 0 8px 4px;
   }
 }
 .slader .container .contBig {
@@ -587,6 +589,9 @@ header .container .message button a {
     width: 60px;
     height: 60px;
   }
+}
+.slader .btn:hover {
+  background-color: #140202;
 }
 .slader .btn-rigth {
   position: absolute;
