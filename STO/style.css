@@ -632,6 +632,7 @@ header .container .message button:hover {
   }
 }
 .take .container {
+  position: relative;
   overflow: hidden;
   border: 1px solid #dd7907;
   border-radius: 15px;
@@ -640,6 +641,46 @@ header .container .message button:hover {
   .take .container {
     width: 950px;
     height: 550px;
+  }
+}
+.take .container .grenText {
+  color: rgb(8, 182, 8);
+  font-size: 12px;
+  position: absolute;
+  display: none;
+  top: 20px;
+  left: 15%;
+}
+@media (min-width: 400px) {
+  .take .container .grenText {
+    left: 20%;
+  }
+}
+@media (min-width: 500px) {
+  .take .container .grenText {
+    left: 25%;
+  }
+}
+@media (min-width: 600px) {
+  .take .container .grenText {
+    left: 30%;
+  }
+}
+@media (min-width: 700px) {
+  .take .container .grenText {
+    left: 35%;
+  }
+}
+@media (min-width: 800px) {
+  .take .container .grenText {
+    left: 37%;
+  }
+}
+@media (min-width: 1024px) {
+  .take .container .grenText {
+    font-size: 25px;
+    top: 100px;
+    left: 30%;
   }
 }
 .take .container .main {
