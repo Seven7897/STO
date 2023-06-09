@@ -76,3 +76,7 @@ function selectInput(list) {
   inputBox.value = list.innerHTML;
   resultBox.innerHTML = "";
 }
+
+function myImg() {
+  document.getElementById("greenText").style.display = "block";
+}
