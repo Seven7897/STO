@@ -647,7 +647,6 @@ header .container .message button:hover {
   color: rgb(8, 182, 8);
   font-size: 12px;
   position: absolute;
-  display: none;
   top: 20px;
   left: 15%;
 }
