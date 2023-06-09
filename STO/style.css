@@ -711,6 +711,7 @@ header .container .message button:hover {
   }
 }
 .take .container form .search-box {
+  position: relative;
   float: right;
 }
 @media (max-width: 1024px) {
@@ -783,18 +784,27 @@ header .container .message button:hover {
   }
 }
 .take .container form .search-box .result-box {
+  width: 620px;
+  background-color: #e9e8e8;
+  position: absolute;
   z-index: 1;
   max-height: 270px;
   overflow-y: scroll;
 }
 @media (max-width: 1024px) {
   .take .container form .search-box .result-box {
-    max-height: 90px;
+    max-height: 150px;
+    width: 200px;
   }
 }
 .take .container form .search-box .result-box ul {
-  border-top: 1px solid #999;
+  margin: 0;
   padding: 2px 5px;
+}
+@media (max-width: 1024px) {
+  .take .container form .search-box .result-box ul {
+    line-height: 15px;
+  }
 }
 .take .container form .search-box .result-box ul li {
   font-size: 25px;
